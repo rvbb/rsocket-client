@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "3af330e7-f998-4511-a561-2aec42e9f480",
+		"name": "RSocket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "rsocket  request/response",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30002/rsocket-client/12",
+					"host": [
+						"localhost"
+					],
+					"port": "30002",
+					"path": [
+						"rsocket-client",
+						"12"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rsocket  fire-then-forget",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"AAA\",\r\n\"phone\": \"11233\"\r\n\"age\":123\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:30002/rsocket-client",
+					"host": [
+						"localhost"
+					],
+					"port": "30002",
+					"path": [
+						"rsocket-client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rsocket  stream",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30002/rsocket-client/stream/1",
+					"host": [
+						"localhost"
+					],
+					"port": "30002",
+					"path": [
+						"rsocket-client",
+						"stream",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rsocket  stream - random",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:30002/rsocket-client/stream/random",
+					"host": [
+						"localhost"
+					],
+					"port": "30002",
+					"path": [
+						"rsocket-client",
+						"stream",
+						"random"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

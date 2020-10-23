@@ -25,7 +25,7 @@ public class RSocketClientTest {
     private static RSocket rsocket;
 
     private final String routingServiceMethod = "com.rvbb.b2b.rsocket.client.service.CustomerService.getCustomerById";
-    private static final String rsocketServerAddress = "ws://localhost:1001/rsocket-server";
+    private static final String rsocketServerAddress = "ws://localhost:30000/rsocket-server";
     @BeforeAll
     public static void setUp() throws Exception {
         rsocket = RSocketFactory

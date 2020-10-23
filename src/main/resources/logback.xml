@@ -52,9 +52,13 @@
 		</encoder>
 	</appender>
 
+	<appender name="asynLog" class="ch.qos.logback.classic.AsyncAppender">
+		<appender-ref ref="appLog"/>
+	</appender>
+
 	<logger name="com.rvbb.b2b.rsocket.client"
 		level="DEBUG" additivity="false">
-		<appender-ref ref="appLog" />
+		<appender-ref ref="asynLog" />
 		<appender-ref ref="console" />
 	</logger>
 	<logger name="org.springframework" level="WARN"
