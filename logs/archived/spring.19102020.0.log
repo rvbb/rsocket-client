@@ -121,7 +121,7 @@ Caused by: java.lang.IllegalStateException: javax.websocket.server.ServerContain
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
 	... 103 common frames omitted
-2020-10-19 11:13:29,372 ERROR org.springframework.test.context.TestContextManager [Test worker] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@575ba0ee] to prepare test instance [com.rvbb.b2b.backend.customer.test.CustomerServiceTest@56f4e81b]
+2020-10-19 11:13:29,372 ERROR org.springframework.test.context.TestContextManager [Test worker] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@575ba0ee] to prepare test instance [CustomerServiceTest@56f4e81b]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
@@ -359,7 +359,7 @@ Caused by: java.lang.IllegalStateException: javax.websocket.server.ServerContain
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
 	... 103 common frames omitted
-2020-10-19 11:15:49,206 ERROR org.springframework.test.context.TestContextManager [Test worker] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@66d98e7e] to prepare test instance [com.rvbb.b2b.backend.customer.test.CustomerServiceTest@3c9bc315]
+2020-10-19 11:15:49,206 ERROR org.springframework.test.context.TestContextManager [Test worker] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@66d98e7e] to prepare test instance [CustomerServiceTest@3c9bc315]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
@@ -528,7 +528,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:16)
+	at CustomerApplication.main(CustomerApplication.java:16)
 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.coxautodev.graphql.tools.SchemaParser]: Factory method 'schemaParser' threw exception; nested exception is com.coxautodev.graphql.tools.FieldResolverError: No method or field found with any of the following signatures (with or without one of [interface graphql.schema.DataFetchingEnvironment] as the last argument), in priority order:
 
   com.rvbb.b2b.backend.customer.resolver.BankListDemoResolver.yourName()
@@ -592,7 +592,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:16)
+	at CustomerApplication.main(CustomerApplication.java:16)
 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.coxautodev.graphql.tools.SchemaParser]: Factory method 'schemaParser' threw exception; nested exception is com.coxautodev.graphql.tools.FieldResolverError: No method or field found with any of the following signatures (with or without one of [interface graphql.schema.DataFetchingEnvironment] as the last argument), in priority order:
 
   com.rvbb.b2b.backend.customer.resolver.BankListDemoResolver.yourName()
@@ -669,7 +669,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:16)
+	at CustomerApplication.main(CustomerApplication.java:16)
 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.coxautodev.graphql.tools.SchemaParser]: Factory method 'schemaParser' threw exception; nested exception is com.coxautodev.graphql.tools.FieldResolverError: No method or field found with any of the following signatures (with or without one of [interface graphql.schema.DataFetchingEnvironment] as the last argument), in priority order:
 
   com.rvbb.b2b.backend.customer.resolver.CustomerOrderResolver.yourName()
@@ -748,7 +748,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:16)
+	at CustomerApplication.main(CustomerApplication.java:16)
 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.coxautodev.graphql.tools.SchemaParser]: Factory method 'schemaParser' threw exception; nested exception is com.coxautodev.graphql.tools.FieldResolverError: No method or field found with any of the following signatures (with or without one of [interface graphql.schema.DataFetchingEnvironment] as the last argument), in priority order:
 
   com.rvbb.b2b.backend.customer.resolver.CustomerResolver.yourName()
@@ -805,7 +805,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:16)
+	at CustomerApplication.main(CustomerApplication.java:16)
 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.coxautodev.graphql.tools.SchemaParser]: Factory method 'schemaParser' threw exception; nested exception is com.coxautodev.graphql.tools.InvalidSchemaError: Invalid schema provided (org.antlr.v4.runtime.InputMismatchException) at: [@9,100:100='}',<2>,6:0]
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
@@ -863,7 +863,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:16)
+	at CustomerApplication.main(CustomerApplication.java:16)
 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.coxautodev.graphql.tools.SchemaParser]: Factory method 'schemaParser' threw exception; nested exception is com.coxautodev.graphql.tools.InvalidSchemaError: Invalid schema provided (org.antlr.v4.runtime.InputMismatchException) at: [@32,189:191='int',<32>,12:51]
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
@@ -914,7 +914,7 @@ org.springframework.context.ApplicationContextException: Unable to start web ser
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:16)
+	at CustomerApplication.main(CustomerApplication.java:16)
 Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126)
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:88)
@@ -1158,7 +1158,7 @@ org.springframework.context.ApplicationContextException: Unable to start web ser
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:16)
+	at CustomerApplication.main(CustomerApplication.java:16)
 Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126)
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:88)
@@ -1345,7 +1345,7 @@ org.springframework.context.ApplicationContextException: Unable to start web ser
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:16)
+	at CustomerApplication.main(CustomerApplication.java:16)
 Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126)
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:88)
@@ -1532,7 +1532,7 @@ org.springframework.context.ApplicationContextException: Unable to start web ser
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:16)
+	at CustomerApplication.main(CustomerApplication.java:16)
 Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126)
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:88)
@@ -1831,13 +1831,13 @@ org.springframework.context.ApplicationContextException: Unable to start web ser
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:12)
+	at CustomerApplication.main(CustomerApplication.java:12)
 Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:203)
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
 	... 8 common frames omitted
-2020-10-19 18:50:35,909 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'graphQLSchemaProvider' defined in class path resource [graphql/kickstart/spring/web/boot/GraphQLWebAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=graphql.kickstart.spring.web.boot.GraphQLWebAutoConfiguration; factoryMethodName=graphQLSchemaProvider; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [graphql/kickstart/spring/web/boot/GraphQLWebAutoConfiguration.class]] for bean 'graphQLSchemaProvider': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=customerApplication; factoryMethodName=graphQLSchemaProvider; initMethodName=null; destroyMethodName=(inferred); defined in com.rvbb.b2b.backend.customer.CustomerApplication] bound.
+2020-10-19 18:50:35,909 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'graphQLSchemaProvider' defined in class path resource [graphql/kickstart/spring/web/boot/GraphQLWebAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=graphql.kickstart.spring.web.boot.GraphQLWebAutoConfiguration; factoryMethodName=graphQLSchemaProvider; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [graphql/kickstart/spring/web/boot/GraphQLWebAutoConfiguration.class]] for bean 'graphQLSchemaProvider': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=customerApplication; factoryMethodName=graphQLSchemaProvider; initMethodName=null; destroyMethodName=(inferred); defined in CustomerApplication] bound.
 2020-10-19 18:50:35,922 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
 
 ***************************
@@ -1846,7 +1846,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-The bean 'graphQLSchemaProvider', defined in class path resource [graphql/kickstart/spring/web/boot/GraphQLWebAutoConfiguration.class], could not be registered. A bean with that name has already been defined in com.rvbb.b2b.backend.customer.CustomerApplication and overriding is disabled.
+The bean 'graphQLSchemaProvider', defined in class path resource [graphql/kickstart/spring/web/boot/GraphQLWebAutoConfiguration.class], could not be registered. A bean with that name has already been defined in CustomerApplication and overriding is disabled.
 
 Action:
 

@@ -52,7 +52,7 @@
 		</encoder>
 	</appender>
 
-	<logger name="com.rvbb.b2b.backend.customer"
+	<logger name="com.rvbb.b2b.rsocket.client"
 		level="DEBUG" additivity="false">
 		<appender-ref ref="appLog" />
 		<appender-ref ref="console" />

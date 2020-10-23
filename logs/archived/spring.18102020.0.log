@@ -155,7 +155,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.rvbb.b2b.backend.customer.CustomerApplication.main(CustomerApplication.java:16)
+	at CustomerApplication.main(CustomerApplication.java:16)
 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.coxautodev.graphql.tools.SchemaParser]: Factory method 'schemaParser' threw exception; nested exception is com.coxautodev.graphql.tools.FieldResolverError: No method or field found with any of the following signatures (with or without one of [interface graphql.schema.DataFetchingEnvironment] as the last argument), in priority order:
 
   com.rvbb.b2b.backend.customer.resolver.BankListDemoResolver.yourName()
