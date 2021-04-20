@@ -23,12 +23,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
-    runtimeOnly 'com.graphql-java-kickstart:altair-spring-boot-starter:8.0.0'
-    runtimeOnly 'com.graphql-java-kickstart:voyager-spring-boot-starter:8.0.0'
-    testImplementation 'com.graphql-java-kickstart:graphql-spring-boot-starter-test:8.0.0'
     implementation 'com.google.guava:guava:26.0-jre'
 
-    //subscription type
     implementation 'io.projectreactor:reactor-core'
     compile(
             'org.mockito:mockito-junit-jupiter:2.23.0',
@@ -57,7 +53,7 @@ task fatJar(type: Jar) {
     manifest {
         def manifest = attributes 'Implementation-Title': 'Rsocket Client example',
                 'Implementation-Version': project.version,
-                'Main-Class': 'com.rvbb.b2b.rsocket.client'
+                'Main-Class': 'com.rvbb.b2b.rsocket.client.RSocketClientApplication'
         manifest
     }
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }

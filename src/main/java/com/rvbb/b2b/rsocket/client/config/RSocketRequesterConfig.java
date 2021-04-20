@@ -2,21 +2,15 @@ package com.rvbb.b2b.rsocket.client.config;
 
 import io.rsocket.RSocket;
 import io.rsocket.RSocketFactory;
-import io.rsocket.frame.decoder.PayloadDecoder;
 import io.rsocket.metadata.WellKnownMimeType;
-import io.rsocket.transport.netty.client.TcpClientTransport;
-import io.rsocket.transport.netty.client.WebsocketClientTransport;
 import io.rsocket.uri.UriTransportRegistry;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
-import org.springframework.messaging.rsocket.MetadataExtractor;
 import org.springframework.messaging.rsocket.RSocketRequester;
 import org.springframework.messaging.rsocket.RSocketStrategies;
 import org.springframework.util.MimeTypeUtils;
-
-import java.net.URI;
 
 @Configuration
 public class RSocketRequesterConfig {
